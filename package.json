@@ -1,0 +1,22 @@
+{
+  "name": "crm-connect",
+  "version": "1.0.0",
+  "description": "CRM is an application to connect all clients with the business need",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tainxa/crm-node.git"
+  },
+  "keywords": [
+    "crm"
+  ],
+  "author": "Muhammad Adeel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tainxa/crm-node/issues"
+  },
+  "homepage": "https://github.com/tainxa/crm-node#readme"
+}
