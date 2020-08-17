@@ -1,22 +1,45 @@
 {
   "name": "crm-connect",
   "version": "1.0.0",
-  "description": "CRM is an application to connect all clients with the business need",
+  "description": "CRM Connect is a system that connects all clients to their business needs",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
+    "test": "env-cmd -f ./config/test.env jest --watch --runInBand"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tainxa/crm-node.git"
+    "url": "git+https://github.com/AdeelApple/crm-node.git"
   },
   "keywords": [
-    "crm"
+    "crm",
+    "cummunication",
+    "helping desk",
+    "client relationship",
+    "client relationship managment",
+    "client connect"
   ],
   "author": "Muhammad Adeel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tainxa/crm-node/issues"
+    "url": "https://github.com/AdeelApple/crm-node/issues"
   },
-  "homepage": "https://github.com/tainxa/crm-node#readme"
+  "homepage": "https://github.com/AdeelApple/crm-node#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.0",
+    "mongoose": "^5.10.0",
+    "multer": "^1.4.2",
+    "sharp": "^0.25.4",
+    "validator": "^13.1.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jest": "^26.4.0",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
+  }
 }
